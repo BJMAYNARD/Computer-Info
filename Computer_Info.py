@@ -20,7 +20,6 @@ def install_and_import(psutil,beautifultable):
         pip.main(['install', beautifultable])
     finally:
         globals()[psutil] = importlib.import_module(psutil)
-        globals()[tabulate] = importlib.import_module(tabulate)
         globals()[beautifultable] = importlib.import_module(beautifultable)
 
 
